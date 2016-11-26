@@ -1,0 +1,92 @@
+#battleWindow{
+    height:150px;
+    width:470px;
+    border: 2px solid black;
+    border-radius:6px;
+	display:inline-block;
+	margin-bottom:5px
+}
+
+#battleMenu{
+   
+}
+
+.element-hide{
+    display:none;
+}
+
+.red {
+    color:red;
+    font-size:20px
+}
+
+.blue {
+    color:blue;
+    font-size:20px
+}
+
+.green {
+    color:green;
+    font-size:20px
+}
+
+#titleScreen{
+    font-family:Verdana;
+    color:white;
+    background-color:blue;
+	font-size:30px;
+}
+
+#HUD-statsWindow{
+    font-family:Verdana;
+    color:red;
+    background-color:yellow;
+	height:150px;
+    width:150px;
+    border: 2px solid black;
+    border-radius:6px;
+	display:inline-block;
+	float:right;
+}
+
+#battleScreen{
+    width: 470px;
+	
+}
+#HUD-stats{
+    /*height:120px;*/
+	width:300px;
+}
+
+.bar {
+	height:15px;
+	background-color:green;	
+	border-radius:5px;
+}
+
+.barWrapper {
+	height:15px;
+	background-color:red;	
+	margin-bottom:2px;
+	border-radius:5px;
+}
+
+#HUD-playerhp{
+	display:inline;
+}
+
+#HUD-playermp{
+	display:inline;
+}
+
+#HUD-HPbar{
+	float:left;
+}
+
+#HUD-MPbar{
+	float:left;
+}
+
+.element-float-leftenemyHPbar{
+	float:left;
+}
