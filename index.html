@@ -1,75 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-		<script src="mainMenu_controller.js" ></script>
-		<script src="mainMenu_Library.js" ></script>
-		<script src="battle_menu/characters.js" ></script>
-		<script src="dungeon_menu/dungeon1.js" ></script>
-		<script src="dungeon_menu/dungeon2.js" ></script>
-		<script src="dungeon_menu/dungeon3.js" ></script>
-		<script src="dungeon_menu/dungeonMenu_Controller.js" ></script>
-		<script src="dungeon_menu/dungeonMenu_Library.js" ></script>
-        <script src="battle_menu/battlemenu_library.js" ></script>	
-		<script src="battle_menu/skillsLibrary.js" ></script>		
-		<script src="battle_menu/enemyConstructor.js" ></script>
-		<script src="battle_menu/playerConstructor.js" ></script>
-		
-		
-    	<title>Simple RPG Battle</title>
-	</head>
-	<body>
-        <div id="battleScreen">
-			<div id="battleWindow">
-				<div id="titleScreen">RPG battle demo</div>
-				
-			</div>
-			<div id="HUD-statsWindowWrapper" class="element-hide">
-				<div id="HUD-statsWindow" ></div>
-			</div>
-		</div>
-        <div id="stats">
-            <div id="HUD-playerStats">
-                <div class ="element-hide" id="playerhp">
-					<div id="HUD-HPtext"></div>
-					<div id="HUD-HPbarWrapper" class="barWrapper">
-						<div id="HUD-HPbar" class="bar"></div>
-					</div>
-				</div>
-			    <div id="HUD-playermp" class ="element-hide">
-					<div id="HUD-MPtext"></div> 
-					<div id="HUD-MPbarWrapper" class="barWrapper">
-						<div id="HUD-MPbar" class="bar"></div>
-					</div>
-				</div>
-               
-            </div>
-            <div id="HUD-enemyStats">
-                <div id="HUD-enemyhp" class ="element-hide">
-					<div id="HUD-enemyHPtext"></div>
-					<div id="HUD-enemyHPbarWrapper" class="barWrapper">
-						<div id="HUD-enemyHPbar" class="bar"></div>
-					</div>
-				</div>
-    		    
-            </div>
-        </div>
-        <div class="battleMenu">
-            <div id="buttonWrapper">
-                
-							
-				
-				<button id="dungeonMenu-button-dungeon1" class ="element-hide">Dungeon 1</button>
-				<button id="dungeonMenu-button-dungeon2" class ="element-hide">Dungeon 2</button>
-				<button id="dungeonMenu-button-dungeon3" class ="element-hide">Dungeon 3</button>
-				<button id="titleScreenMenu-button-play" class ="element-hide">Play</button>
-				<button id="titleScreenMenu-button-newGame">New Game</button>
-				<button id="titleScreenMenu-button-loadGame">Load Game</button>
-				<button id="endOfBattleMenu-button-save" class ="element-hide">Save</button>
-				<button id="endOfBattleMenu-button-quit" class ="element-hide">Quit</button>
-            </div>
-        </div>  
-        
-	</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
